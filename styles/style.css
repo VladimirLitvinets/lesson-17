@@ -1,0 +1,386 @@
+:root {
+	--primary-color: #000000;
+	--secondary-color: #C4C4C4;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+body {
+	font-family: "Roboto", Arial, "Times New Roman";
+	background-color: #fff;
+	font-size: 20px;
+	padding: 0px;
+}
+
+img {
+	max-width: 100%;
+	height: auto;	
+}
+
+p {
+	font-weight: 500;
+	color: var(--primary-color);
+	line-height: 1.4;
+}
+
+.container {
+	width: 100%;
+	max-width: 1250px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.title-h1 {
+	font-size: 227px;
+	color: var(--primary-color);
+}
+
+.title-h2 {
+	font-size: 48px;
+	color: var(--primary-color);
+}
+
+.title-h3 {
+	font-size: 32px;
+	color: var(--primary-color);
+}
+
+/* ------------------------------------HEADER----------------------------------- */
+
+.header {
+	padding-top: 30px;
+	padding-bottom: 50px;
+}
+
+.header__container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.header__logo-link {
+	margin-bottom: 45px;
+}
+
+.header__list {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 30px;
+	padding: 10px;
+	border-radius: 80px;	
+	background-color: var(--primary-color);
+}
+
+.header__item {
+	padding: 15px;	
+	list-style: none;
+	
+}
+
+.header__link {
+	padding: 20px;
+	border-radius: 50px;
+	font-size: 20px;
+	font-weight: 500;
+	text-decoration: none;
+	color: var(--secondary-color);
+}
+
+.header__link:hover {
+	background-color: #FFFFFF;
+	color: #000000;
+}
+
+.header__link-icon {
+		width: 20px;
+		height: 20px;
+		vertical-align: middle;
+		margin-right: 5px;
+		--myColor1: #C4C4C4;
+      --myColor2: #000000;
+}
+
+.header__link:hover .header__link-icon {
+	--myColor1: #000000;
+	--myColor2: #FFFFFF;
+}
+
+/* -----------------------------------HERO------------------------------- */
+
+.hero {
+	padding-bottom: 145px;		
+}
+
+.hero__title {
+	margin-bottom: 40px;
+}
+
+.hero__talk {
+	display: flex;
+	justify-content: space-between;
+}
+
+.hero__talk-title {
+	margin-bottom: 10px;
+	font-size: 24px;
+}
+
+.hero__talk-text-container {
+	max-width: 471px;
+}
+
+/* ---------------------------------------PROJECTS-------------------------------------- */
+
+.projects {
+	padding-bottom: 155px;
+}
+
+.projects__info {
+	margin-bottom: 40px;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+.projects__info-container {
+	max-width: 390px;
+}
+
+.projects__title {
+	margin-bottom: 10px;
+	font-size: 48px;
+}
+
+.projects__button {
+	border: none;
+	background-color: transparent;
+	font-family: "Roboto", Arial, "Times New Roman";
+}
+
+.projects__button-icon {
+	width: 15px;
+	height: 15px;
+	vertical-align: middle;
+	margin-left: 5px;
+}
+
+.projects__cards {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 35px;
+	justify-content: center	;
+}
+.projects__card {
+	width: calc(50% - 17.5px );
+}
+
+.projects__image {
+	margin-bottom: 25px;
+}
+
+.projects__subtitle {
+	margin-bottom: 10px;
+}
+
+/* ---------------------------------------EXPERTISE-------------------------------------- */
+
+.expertise {
+	padding-bottom: 75px;
+}
+
+.expertise__title {
+	margin-bottom: 45px;
+	font-size: 48px;
+}
+
+.expertise__columns {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: 80px;
+}
+
+.expertise__column {
+	max-width: 440px;
+	width: calc(50% - 40px);	
+}
+
+.expertise__column-title {
+	margin-bottom: 25px;
+	font-size: 32px;
+}
+
+.expertise__column-title:before {
+	content: "";
+	position: absolute;	
+	margin-left: -15px;
+	margin-top: 15px;
+	width: 5px;
+	height: 5px;
+	border-radius: 50px;
+	background-color: var(--primary-color);
+	
+}
+
+/* -----------------------------------------DESIGN--------------------------------------- */
+
+.design {
+	padding-bottom: 80px;
+}
+
+.design__strip {
+	width: 100%;
+	text-wrap: nowrap;
+	background-color: var(--primary-color);
+}
+
+.design__text {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	font-size: 140px;
+	color: var(--secondary-color);
+	animation-name: move;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;	
+}
+
+@keyframes move {
+	0% {
+	transform: translateX(50px);
+	}
+
+	50% {
+   transform: translateX(-650px);
+	}
+
+	100% {
+	transform: translateX(50px);
+	}
+}
+
+/* -------------------------------------TESTIMONIALS------------------------------------- */
+
+.testimonials {
+	padding-bottom: 130px;
+}
+
+.testimonials__container {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	gap: 80px;
+}
+
+.testimonials__item {
+	max-width: 955px;
+}
+
+.testimonials__item-title {
+	font-size: 64px;
+	margin-bottom: 40px;
+}
+
+.testimonials__item-text {
+	font-size: 48px;
+}
+
+.testimonials__name-title {
+	margin-bottom: 10px;
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.testimonials__name-text {
+	font-weight: 500;
+}
+
+/* -----------------------------------------TALK---------------------------------------- */
+
+.talk {
+	padding-bottom: 150px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.talk__title {
+	margin-bottom: 50px;
+	font-size: 140px;
+	font-weight: 600;
+}
+
+.talk__button {
+	padding: 30px 50px;
+	border-radius: 144px;
+	font-size: 20px;
+	font-weight: 600;
+	font-family: "Roboto", Arial, "Times New Roman";
+	color: #ffffff;	
+	background-color: var(--primary-color);
+}
+
+.talk__button-icon {
+	width: 15px;
+	height: 15px;
+}
+
+/* ---------------------------------------FOOTER----------------------------------------- */
+
+.footer{
+   padding-bottom: 50px;
+}
+
+.footer__copyright {
+	font-size: 14px;
+	font-weight: 500;
+}
+
+.footer__container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer__social {
+		display: flex;
+		justify-content: space-between;
+		gap: 40px;
+}
+
+.footer__social-item {
+	list-style: none;
+}
+
+.footer__social-link {
+	font-size: 14px;
+	font-weight: 500;
+	text-decoration: none;
+	color: var(--primary-color);
+}
+
+/* -----------------------------------SCROLL DOWN BUTTON--------------------------------- */
+
+.scroll-down {
+	position: fixed;
+	right: 130px;
+	top: 630px;
+}
+
+.scroll-down__button {
+	padding: 30px;
+	border-radius: 144px;
+	border: none;
+	font-size: 20px;
+	font-weight: 600;
+	background-color: #F9F9F9;
+}
+
+.scroll-down__icon {
+	width: 15px;
+	height: 15px;
+}
