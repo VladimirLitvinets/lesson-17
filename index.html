@@ -17,7 +17,13 @@
 			<a href="./index.html" class="header__logo-link">
 				<img class="header__logo" src="./images/Logo.svg" alt="">
 			</a>
-			<ul class="menu">
+			<button class="menu-btn" type="button">
+				<span class="btn-line btn-line1"></span>
+				<span class="btn-line btn-line2"></span>
+				<span class="btn-line btn-line3"></span>
+				<span class="btn-line btn-line4"></span>
+			</button>
+			<ul class="menu header__menu">
 				<li class="menu__item">
 					<a href="" class="menu__link">Home</a>
 				</li>
@@ -39,9 +45,11 @@
 				<h1 class="title-h1 hero__title">
 					Websites& Branding
 				</h1>
-				<a href="#section-projects" class="button button_primary hero__button">SCROLL DOWN <svg class="button-icon">
-						<use href="./images/icons/symbol-defs.svg#icon-arrow-down"></use>
-					</svg></a>
+				<div class="hero__button-container">
+					<a href="#section-projects" class="button button_primary">SCROLL DOWN <svg class="button-icon">
+							<use href="./images/icons/symbol-defs.svg#icon-arrow-down"></use>
+						</svg></a>
+				</div>
 				<div class="hero__talk">
 					<div class="hero__talk-email-container">
 						<h3 class="title-h3 hero__talk-title">Let’s Talk</h3>
@@ -62,11 +70,9 @@
 						<p class="projects__text">As a seasoned creator of contemporary, user-friendly web designs and digital
 							solutions, I aim to assist you in constructing the brand of your fantasies.</p>
 					</div>
-					<div class="projects__button-container">
-						<a href="" class="button">More <svg class="button-link-icon">
-								<use href="/images/icons/symbol-defs.svg#icon-arrow-right"></use>
-							</svg></a>
-					</div>
+					<a href="" class="button projects__button">More <svg class="button-link-icon">
+							<use href="/images/icons/symbol-defs.svg#icon-arrow-right"></use>
+						</svg></a>
 				</div>
 				<div class="projects__cards">
 					<div class="projects__card">
@@ -149,9 +155,10 @@
 				</div>
 			</div>
 		</section>
-		<section class="talk">
+		<section class="container talk">
 			<h2 class="title-h2 talk__title">Let’s talk!</h2>
-			<a href="mailto:hello@joey.co" class="button button_secondary">hello@joey.co <svg class="button-icon">
+			<a href="mailto:hello@joey.co" class="button button_secondary">hello@joey.co <svg
+					class="button-icon button_icon-adaptive">
 					<use href="./images/icons/symbol-defs.svg#icon-arrow-white"></use>
 				</svg></a>
 		</section>
@@ -172,6 +179,7 @@
 			</ul>
 		</div>
 	</footer>
+	<script src="js/main.js"></script>
 </body>
 
 </html>
