@@ -110,7 +110,7 @@ p {
 	vertical-align: middle;
 }
 
-.button_icon-adaptive {
+.button-icon-adaptive {
 	@media screen and (max-width: 770px) {
 		width: 10px;
 		height: 10px;
