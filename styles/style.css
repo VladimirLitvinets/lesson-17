@@ -331,22 +331,21 @@ color: var(--secondary-color)
 	white-space: nowrap;
 	
 	@media screen and (max-width: 1345px) {
-		margin-left: 90px;
+		margin-left: 60px;
 	}
 
 	@media screen and (max-width: 750px) {
-		margin-left: 40px;
+		margin-left: 20px;
 	}
 
 	@media screen and (max-width: 600px) {
-		margin-left: 20px;
+		margin-left: 0;
 	}
 	
 	@media screen and (max-width: 550px) {
 		display: flex;
 		justify-content: flex-end;
 		margin-top: 25px;
-		margin-left: 0;
 	}
 }
 
