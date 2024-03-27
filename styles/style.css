@@ -65,7 +65,7 @@ p {
 	color: var(--primary-color);
 }
 
-.button_primary {
+.button-primary {
 	padding: 30px 40px;
    background-color: #F9F9F9;
 
@@ -84,7 +84,7 @@ p {
 	} 
 }
 
-.button_secondary {
+.button-secondary {
 	padding: 30px 60px;
 	color: #ffffff;	
 	background-color: var(--primary-color);
@@ -328,41 +328,30 @@ color: var(--secondary-color)
 }
 
 .hero__button-container {
-	position: absolute;
-	right: 120px;
-	top: 630px;
-
+	white-space: nowrap;
+	
 	@media screen and (max-width: 1345px) {
-		top: 560px;	
-		}
-
-	@media screen and (max-width: 1170px) {
-		top: 490px;	
+		margin-left: 90px;
 	}
 
-	@media screen and (max-width: 1015px) {
-		top: 420px;
+	@media screen and (max-width: 750px) {
+		margin-left: 40px;
 	}
 
-	@media screen and (max-width: 850px) {
-		top: 390px;
+	@media screen and (max-width: 600px) {
+		margin-left: 20px;
 	}
 	
-	@media screen and (max-width: 770px) {
-		right: 70px;
-	}
-
-	@media screen and (max-width: 680px) {
-		top: 350px;
-	}
-
-	@media screen and (max-width: 570px) {
-		position: static;
+	@media screen and (max-width: 550px) {
 		display: flex;
 		justify-content: flex-end;
-		margin-bottom: 20px;;
-	} 
-	
+		margin-top: 25px;
+		margin-left: 0;
+	}
+}
+
+.hero__button {
+	vertical-align: middle;
 }
 
 .hero__talk {
