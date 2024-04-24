@@ -249,23 +249,25 @@ p {
 .menu__item {
   padding-top: 10px;
   padding-bottom: 10px;
-  border-radius: 50px;
-}
-
-.menu__item:hover {
-  background-color: #FFFFFF;
 }
 
 .menu__link {
   padding: 10px 20px;
+  border-radius: 50px;
   font-size: 20px;
   font-weight: 500;
   text-decoration: none;
   color: var(--secondary-color);
 }
 
-.menu__item:hover .menu__link {
-  color: #000000;
+.menu__link_active {
+  color: var(--primary-color);
+  background-color: #FFFFFF;
+}
+
+.menu__link:hover {
+  color: var(--primary-color);
+  background-color: #FFFFFF;
 }
 
 .menu__link-icon {
@@ -280,8 +282,8 @@ p {
   background-color: var(--secondary-color);
 }
 
-.menu__item:hover .menu__link-icon {
-  color: #fff;
+.menu__link:hover .menu__link-icon {
+  color: #FFFFFF;
   background-color: var(--primary-color);
 }
 
@@ -408,28 +410,30 @@ p {
 }
 
 .projects__info {
-  margin-bottom: 40px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-end;
-  position: relative;
-}
-
-.projects__info-container {
-  max-width: 390px;
+  margin-bottom: 40px;
 }
 @media screen and (max-width: 570px) {
-  .projects__info-container {
-    max-width: 100%;
+  .projects__info {
+    align-items: flex-start;
   }
 }
 
 .projects__title {
+  width: 100%;
   margin-bottom: 10px;
 }
 @media screen and (max-width: 850px) {
   .projects__title {
     font-size: 32px;
+  }
+}
+@media screen and (max-width: 570px) {
+  .projects__title {
+    width: auto;
   }
 }
 @media screen and (max-width: 430px) {
@@ -438,9 +442,18 @@ p {
   }
 }
 
+.projects__text {
+  max-width: 390px;
+}
 @media screen and (max-width: 850px) {
   .projects__text {
     font-size: 16px;
+  }
+}
+@media screen and (max-width: 570px) {
+  .projects__text {
+    max-width: 100%;
+    order: 2;
   }
 }
 @media screen and (max-width: 430px) {
@@ -449,13 +462,6 @@ p {
   }
 }
 
-@media screen and (max-width: 570px) {
-  .projects__button {
-    position: absolute;
-    top: 7px;
-    right: 10px;
-  }
-}
 @media screen and (max-width: 850px) {
   .projects__button {
     font-size: 16px;

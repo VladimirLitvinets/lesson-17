@@ -120,23 +120,25 @@
 .menu__item {
 	padding-top: 10px;
 	padding-bottom: 10px;
-	border-radius: 50px;
-}
-
-.menu__item:hover {
-	background-color: #FFFFFF;
 }
 
 .menu__link {
 	padding: 10px 20px;
+	border-radius: 50px;
 	font-size: 20px;
 	font-weight: 500;
 	text-decoration: none;
 	color: var(--secondary-color)
 }
 
-.menu__item:hover .menu__link {
-	color: #000000;
+.menu__link_active {
+	color: var(--primary-color);
+	background-color: #FFFFFF;
+}
+
+.menu__link:hover {
+	color: var(--primary-color);
+	background-color: #FFFFFF;
 }
 
 .menu__link-icon {
@@ -151,7 +153,7 @@
 	background-color: var(--secondary-color);
 }
 
-.menu__item:hover .menu__link-icon {
-	color: #fff;
+.menu__link:hover .menu__link-icon {
+	color: #FFFFFF;
 	background-color: var(--primary-color);
 }
