@@ -1,0 +1,157 @@
+.header {
+	padding-top: 30px;
+	padding-bottom: 50px;
+
+	@media screen and (max-width: 430px) {
+		& {
+			padding-bottom: 30px;
+		}
+	}
+}
+
+.header__container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	@media screen and (max-width: 750px) {
+		& {
+			flex-direction: row;
+			justify-content: space-between;
+		}
+	}
+}
+
+.header__logo-link {
+	margin-bottom: 45px;
+
+	@media screen and (max-width: 750px) {
+		& {
+			margin-bottom: 0px;
+		}
+	}
+}
+
+.header__logo {
+	@media screen and (max-width: 375px) {
+		& {
+			width: 60px;
+			height: 20px;
+		}
+	}
+}
+
+.menu-btn {
+	display: none;
+	position: relative;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	border: none;
+	cursor: pointer;
+	background-color: var(--primary-color);
+
+	@media screen and (max-width: 750px) {
+		& {
+			display: inline-block;
+		}
+	}
+}
+
+.btn-line {
+	position: absolute;
+	left: 11px;
+	width: 18px;
+	height: 2px;
+	border: none;
+	border-radius: 2px;
+	background-color: #fff;
+	transition: .3s ease;
+}
+
+.btn-line_1 {
+	top: 13px;
+}
+
+.btn-line_2,
+.btn-line_3 {
+	top: 20px;
+}
+
+.btn-line_4 {
+	top: 27px;
+}
+
+.menu-open .btn-line_1 {
+	transform: scaleX(0);
+}
+
+.menu-open .btn-line_2 {
+	transform: rotate(45deg);
+}
+
+.menu-open .btn-line_3 {
+	transform: rotate(-45deg);
+}
+
+.menu-open .btn-line_4 {
+	transform: scaleX(0);
+}
+
+.menu {
+	display: flex;
+	justify-content: space-between;
+	padding: 5px;
+	gap: 15px;
+	flex-wrap: wrap;
+	border-radius: 80px;
+	list-style: none;
+	background-color: var(--primary-color);
+}
+
+.header__menu {
+	@media screen and (max-width: 750px) {
+		& {
+			display: none;
+		}
+	}
+}
+
+.menu__item {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-radius: 50px;
+}
+
+.menu__item:hover {
+	background-color: #FFFFFF;
+}
+
+.menu__link {
+	padding: 10px 20px;
+	font-size: 20px;
+	font-weight: 500;
+	text-decoration: none;
+	color: var(--secondary-color)
+}
+
+.menu__item:hover .menu__link {
+	color: #000000;
+}
+
+.menu__link-icon {
+	display: inline-block;
+	height: 20px;
+	width: 20px;
+	vertical-align: middle;
+	border-radius: 50%;
+	padding: 4px;
+	font-size: 10px;
+	color: #000000;
+	background-color: var(--secondary-color);
+}
+
+.menu__item:hover .menu__link-icon {
+	color: #fff;
+	background-color: var(--primary-color);
+}

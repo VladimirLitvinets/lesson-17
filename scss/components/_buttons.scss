@@ -1,0 +1,89 @@
+.button {
+	border-radius: 144px;
+	border: none;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 1.4;
+	font-family: "Roboto", Arial, "Times New Roman", sans-serif;
+	text-decoration: none;
+	background-color: transparent;
+	color: var(--primary-color);
+}
+
+.button_primary {
+	padding: 30px 40px;
+	background-color: #F9F9F9;
+
+	@media screen and (max-width: 850px) {
+		& {
+			padding: 25px 35px;
+			font-size: 16px;
+		}
+	}
+
+	@media screen and (max-width: 600px) {
+		& {
+			padding: 20px 30px;
+			font-size: 14px;
+		}
+	}
+
+	@media screen and (max-width: 430px) {
+		& {
+			padding: 10px;
+		}
+	}
+}
+
+.button_secondary {
+	padding: 30px 60px;
+	color: #ffffff;
+	background-color: var(--primary-color);
+
+	@media screen and (max-width: 770px) {
+		& {
+			font-size: 12px;
+			padding: 18px 30px;
+		}
+	}
+
+	@media screen and (max-width: 430px) {
+		& {
+			font-size: 20px;
+			padding: 24px 55px;
+		}
+	}
+
+	@media screen and (max-width: 300px) {
+		& {
+			padding: 20px 30px;
+		}
+	}
+}
+
+.button-icon {
+	width: 15px;
+	height: 15px;
+	vertical-align: middle;
+
+	@media screen and (max-width: 770px) {
+		& {
+			width: 10px;
+			height: 10px;
+		}
+	}
+
+	@media screen and (max-width: 430px) {
+		& {
+			width: 15px;
+			height: 15px;
+		}
+	}
+}
+
+.button-link-icon {
+	width: 15px;
+	height: 15px;
+	vertical-align: middle;
+	margin-left: 5px;
+}
