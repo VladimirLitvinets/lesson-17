@@ -41,7 +41,7 @@
 	}
 }
 
-.menu-btn {
+.menu__btn {
 	display: none;
 	position: relative;
 	width: 40px;
@@ -98,7 +98,7 @@
 	transform: scaleX(0);
 }
 
-.menu {
+.menu__list {
 	display: flex;
 	justify-content: space-between;
 	padding: 5px;
@@ -107,9 +107,7 @@
 	border-radius: 80px;
 	list-style: none;
 	background-color: var(--primary-color);
-}
 
-.header__menu {
 	@media screen and (max-width: 750px) {
 		& {
 			display: none;

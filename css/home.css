@@ -173,7 +173,7 @@ p {
   }
 }
 
-.menu-btn {
+.menu__btn {
   display: none;
   position: relative;
   width: 40px;
@@ -184,7 +184,7 @@ p {
   background-color: var(--primary-color);
 }
 @media screen and (max-width: 750px) {
-  .menu-btn {
+  .menu__btn {
     display: inline-block;
   }
 }
@@ -229,7 +229,7 @@ p {
   transform: scaleX(0);
 }
 
-.menu {
+.menu__list {
   display: flex;
   justify-content: space-between;
   padding: 5px;
@@ -239,9 +239,8 @@ p {
   list-style: none;
   background-color: var(--primary-color);
 }
-
 @media screen and (max-width: 750px) {
-  .header__menu {
+  .menu__list {
     display: none;
   }
 }

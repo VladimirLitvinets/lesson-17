@@ -1,4 +1,4 @@
-const btn = document.querySelector('.menu-btn');
+const btn = document.querySelector('.menu__btn');
 const nav = document.querySelector('.header__container');
 
 btn.addEventListener('click', () => {
