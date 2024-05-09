@@ -1,6 +1,16 @@
 .header {
+	position: sticky;
+	top: -100px;
 	padding-top: 30px;
 	padding-bottom: 50px;
+
+	@media screen and (width <570px) {
+		& {
+			padding-top: 15px;
+			padding-bottom: 35px;
+			top: 0;
+		}
+	}
 
 	@media screen and (max-width: 430px) {
 		& {
@@ -14,7 +24,7 @@
 	flex-direction: column;
 	align-items: center;
 
-	@media screen and (max-width: 750px) {
+	@media screen and (max-width: 570px) {
 		& {
 			flex-direction: row;
 			justify-content: space-between;
@@ -25,7 +35,7 @@
 .header__logo-link {
 	margin-bottom: 45px;
 
-	@media screen and (max-width: 750px) {
+	@media screen and (max-width: 570px) {
 		& {
 			margin-bottom: 0px;
 		}
@@ -41,7 +51,31 @@
 	}
 }
 
-.menu__btn {
+.menu_active {
+	@media (width <=570px) {
+		.menu__container {
+			display: flex;
+			flex-direction: column;
+		}
+
+		.menu__list {
+			flex-direction: column;
+		}
+
+		.menu__overlay {
+			display: block;
+		}
+	}
+}
+
+.menu__overlay {
+	position: fixed;
+	inset: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+	display: none;
+}
+
+.burger {
 	display: none;
 	position: relative;
 	width: 40px;
@@ -51,14 +85,14 @@
 	cursor: pointer;
 	background-color: var(--primary-color);
 
-	@media screen and (max-width: 750px) {
+	@media screen and (max-width: 570px) {
 		& {
 			display: inline-block;
 		}
 	}
 }
 
-.btn-line {
+.burger__line {
 	position: absolute;
 	left: 11px;
 	width: 18px;
@@ -69,50 +103,60 @@
 	transition: .3s ease;
 }
 
-.btn-line_1 {
+.burger__line_1 {
 	top: 13px;
 }
 
-.btn-line_2,
-.btn-line_3 {
+.burger__line_2,
+.burger__line_3 {
 	top: 20px;
 }
 
-.btn-line_4 {
+.burger__line_4 {
 	top: 27px;
 }
 
-.menu-open .btn-line_1 {
+.menu_active .burger__line_1 {
 	transform: scaleX(0);
 }
 
-.menu-open .btn-line_2 {
+.menu_active .burger__line_2 {
 	transform: rotate(45deg);
 }
 
-.menu-open .btn-line_3 {
+.menu_active .burger__line_3 {
 	transform: rotate(-45deg);
 }
 
-.menu-open .btn-line_4 {
+.menu_active .burger__line_4 {
 	transform: scaleX(0);
+}
+
+.menu__container {
+	@media screen and (width < 570px) {
+		& {
+			display: none;
+			position: fixed;
+			background-color: var(--primary-color);
+			border-radius: 30px;
+			text-align: center;
+			align-items: center;
+			justify-content: center;
+			inset: 90px 15px auto;
+			padding: 20px 15px;
+		}
+	}
 }
 
 .menu__list {
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-evenly;
 	padding: 5px;
 	gap: 15px;
 	flex-wrap: wrap;
 	border-radius: 80px;
 	list-style: none;
 	background-color: var(--primary-color);
-
-	@media screen and (max-width: 750px) {
-		& {
-			display: none;
-		}
-	}
 }
 
 .menu__item {

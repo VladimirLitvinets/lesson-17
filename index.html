@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="page" lang="en">
 
 <head>
 	<meta charset="UTF-8">
@@ -12,37 +12,41 @@
 </head>
 
 <body class="body">
-	<header class="header">
+	<header class="header section">
 		<div class="container header__container">
 			<a href="./index.html" class="header__logo-link">
 				<img class="header__logo" src="./images/Logo.svg" alt="">
 			</a>
-			<nav class="menu">
-				<button class="menu__btn" type="button">
-					<span class="btn-line btn-line_1"></span>
-					<span class="btn-line btn-line_2"></span>
-					<span class="btn-line btn-line_3"></span>
-					<span class="btn-line btn-line_4"></span>
+			<nav class="menu" id="js-nav">
+				<div class="menu__overlay" id="js-nav-overlay"></div>
+				<button class="burger" type="button" id="js-nav-toggle">
+					<span class="burger__line burger__line_1"></span>
+					<span class="burger__line burger__line_2"></span>
+					<span class="burger__line burger__line_3"></span>
+					<span class="burger__line burger__line_4"></span>
 				</button>
-				<ul class="menu__list">
-					<li class="menu__item">
-						<a href="" class="menu__link menu__link_active">Home</a>
-					</li>
-					<li class="menu__item">
-						<a href="" class="menu__link"><span class="menu__link-icon">20</span> Projects</a>
-					</li>
-					<li class="menu__item">
-						<a href="" class="menu__link">About</a>
-					</li>
-					<li class="menu__item">
-						<a href="" class="menu__link">Contact</a>
-					</li>
-				</ul>
+				<div class="menu__container">
+					<ul class="menu__list">
+						<li class="menu__item">
+							<a href="#section-hero" class="menu__link js-nav-link">Home</a>
+						</li>
+						<li class="menu__item">
+							<a href="#section-projects" class="menu__link js-nav-link"><span class="menu__link-icon">20</span>
+								Projects</a>
+						</li>
+						<li class="menu__item">
+							<a href="#section-expertise" class="menu__link js-nav-link">Expertise</a>
+						</li>
+						<li class="menu__item">
+							<a href="#section-contact" class="menu__link js-nav-link">Contact</a>
+						</li>
+					</ul>
+				</div>
 			</nav>
 		</div>
 	</header>
 	<main class="main">
-		<section class="hero">
+		<section class="hero section" id="section-hero">
 			<div class="container">
 				<h1 class="title-h1 hero__title">
 					<span class="hero__title-container">Websites& Branding</span>
@@ -65,7 +69,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="projects" id="section-projects">
+		<section class="projects section" id="section-projects">
 			<div class="container">
 				<div class="projects__info">
 					<h2 class="title-h2 projects__title">Projects</h2>
@@ -103,7 +107,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="expertise">
+		<section class="expertise section" id="section-expertise">
 			<div class="container">
 				<h2 class="title-h2 expertise__title">Expertise</h2>
 				<div class="expertise__columns">
@@ -134,12 +138,12 @@
 				</div>
 			</div>
 		</section>
-		<section class="design">
+		<section class="design section">
 			<div class="design__strip">
 				<h2 class="design__text">Visual design for digital experiences</h2>
 			</div>
 		</section>
-		<section class="testimonials">
+		<section class="testimonials section">
 			<div class="container testimonials__container">
 				<div class="testimonials__item">
 					<h2 class="title-h2 testimonials__item-title">Testimonials</h2>
@@ -156,14 +160,14 @@
 				</div>
 			</div>
 		</section>
-		<section class="container talk">
+		<section class="container talk section" id="section-contact">
 			<h2 class="title-h2 talk__title">Let’s talk!</h2>
 			<a href="mailto:hello@joey.co" class="button button_secondary">hello@joey.co <svg class="button-icon">
 					<use href="./images/icons/arrows.svg#icon-arrow-white"></use>
 				</svg></a>
 		</section>
 	</main>
-	<footer class="footer">
+	<footer class="footer section">
 		<div class="container footer__container">
 			<p class="footer__copyright">2023 © — Made by Djectstudio</p>
 			<ul class="footer__social">
