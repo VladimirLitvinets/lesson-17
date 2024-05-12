@@ -34,8 +34,10 @@ p {
   scroll-behavior: smooth;
 }
 
-.no-scroll {
-  overflow: hidden;
+@media screen and (width <= 570px) {
+  .no-scroll {
+    overflow: hidden;
+  }
 }
 
 .section {
@@ -153,7 +155,7 @@ p {
   padding-top: 30px;
   padding-bottom: 50px;
 }
-@media screen and (width < 570px) {
+@media screen and (width <= 570px) {
   .header {
     padding-top: 15px;
     padding-bottom: 35px;
@@ -270,7 +272,7 @@ p {
   transform: scaleX(0);
 }
 
-@media screen and (width < 570px) {
+@media screen and (width <= 570px) {
   .menu__container {
     display: none;
     position: fixed;

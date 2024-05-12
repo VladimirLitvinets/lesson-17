@@ -37,7 +37,11 @@ p {
 }
 
 .no-scroll {
-	overflow: hidden;
+	@media screen and (width <=570px) {
+		& {
+			overflow: hidden;
+		}
+	}
 }
 
 .section {
