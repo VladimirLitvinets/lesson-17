@@ -118,6 +118,13 @@
 
 .projects__image {
 	margin-bottom: 25px;
+	border-radius: 32px;
+
+	@media screen and (max-width: 768px) {
+		& {
+			border-radius: 18px;
+		}
+	}
 }
 
 .projects__subtitle {
