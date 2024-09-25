@@ -1,1 +1,1 @@
-github pages - https://vladimirlitvinets.github.io/lesson-16/
+github pages - https://vladimirlitvinets.github.io/lesson-17/
